@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egyption Party</title>
+    <!--! ============ BootStrap ============ -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--! ============ Css ============ -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--! ============ FontAwesome ============ -->
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+    <!-- =====> side vav <===== -->
+
+    <div class="navSideMenu d-none vh-100 d-flex overflow-hidden">
+        <div class="navMenu bg-black">
+            <ul class="pages mt-4 overflow-hidden">
+                <li onclick="displaySearchPage(); CloseNavMenu()" class="text-white mb-4 list-unstyled cursor-pointer ">
+                    Search</li>
+                <li onclick="getCategories(); CloseNavMenu()" class="text-white mb-4 list-unstyled cursor-pointer ">
+                    Categories</li>
+                <li onclick="getArea(); CloseNavMenu()" class="text-white mb-4 list-unstyled cursor-pointer ">
+                    Area</li>
+                <li onclick="getIngredients(); CloseNavMenu()" class="text-white mb-4 list-unstyled cursor-pointer ">
+                    Ingredients</li>
+                <li onclick="DisplayContactPage(); CloseNavMenu()"
+                    class="text-white mb-4 list-unstyled cursor-pointer ">
+                    Contact Us</li>
+            </ul>
+            <div class="navFooter text-white ms-4 ">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer"></i>
+                    <i class="fa-solid fa-globe cursor-pointer"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights
+                        <br>
+                        Reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="navHeader bg-white vh-100 ">
+            <div class="logo">
+                <img src="images/logo.png" alt="Yummy-Logo" class="w-100 p-2 mt-3">
+            </div>
+            <h1 class="closebtn d-flex justify-content-center align-items-center cursor-pointer">
+                <i class="openClosebtn fa-solid fa-align-justify fs-2 mt-4"></i>
+            </h1>
+            <div class="HFooter d-flex justify-content-center align-items-center flex-column mt-4 gap-2">
+                <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====> Home Loader <===== -->
+    <div
+        class="loading position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center vh-100 text-white">
+        <i class="fa fa-spinner fa-spin fa-5x text-center"></i>
+    </div>
+
+
+    <!-- =====> HomeData && Inner Loader <===== -->
+
+    <section class="page bg-black min-vh-100">
+        <div class="data text-white position-relative">
+
+
+            <div
+                class="innerLoadingScreen d-none position-fixed top-50 start-50 end-0 bottom-0 justify-content-center align-items-center vh-100 text-white">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+
+
+            <div class="container overflow-hidden">
+                <div class="row row1 mt-4 gy-4 overflow-hidden" id="row">
+
+
+                </div>
+            </div>
+
+
+            <div class="data text-white">
+                <div class="container overflow-hidden">
+                    <div class="row row2 mt-4 gy-4 overflow-hidden" id="row">
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <!--! ============ jquery Js File ============ -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!--! ============ BootStrap JS File ============ -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--! ============ Main Js File ============ -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
